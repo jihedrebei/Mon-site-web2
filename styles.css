@@ -1,0 +1,115 @@
+/* Applique un style global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    height: 100%; /* Nécessaire pour que le fond couvre toute la page */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fond avec une image de soleil */
+body {
+    background-image: url('sun.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Permet à l'image de fond de ne pas bouger lors du défilement */
+}
+
+/* Styles pour le header */
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    position: relative;
+    z-index: 2; /* S'assurer que le header est au-dessus de l'image */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+
+/* Styles pour le contenu principal */
+main {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    display: inline-block;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 600px;
+    flex-grow: 1; /* Permet au contenu de s'étendre pour occuper tout l'espace disponible */
+}
+h1 {
+    margin-top: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+form.formulaire-gauche {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Style des étiquettes */
+form.formulaire-gauche label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Champs de formulaire */
+form.formulaire-gauche input,
+form.formulaire-gauche textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Effet de focus */
+form.formulaire-gauche input:focus,
+form.formulaire-gauche textarea:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+    outline: none;
+}
+
+/* Bouton */
+form.formulaire-gauche button {
+    background: #4facfe;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form.formulaire-gauche button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #4facfe;
+    color: white;
+    font-size: 0.9rem;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+s
